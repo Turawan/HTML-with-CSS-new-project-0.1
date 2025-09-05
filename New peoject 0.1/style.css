@@ -1,68 +1,85 @@
 body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background: #f9f9f9;
-    }
-    header {
-      background: #fcd303;
-      padding: 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 26px;
-      font-weight: bold;
-    }
-    header p {
-      font-size: 14px;
-      font-style: italic;
-      margin-top: 5px;
-    }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      text-align: left;
-    }
-    .column {
-      flex: 1;
-      padding: 20px;
-      color: white;
-    }
-    .left {
-      background: #0047ab;
-    }
-    .right {
-      background: #e63946;
-    }
-    .column h2 {
-      text-align: center;
-      margin-bottom: 15px;
-      font-size: 20px;
-      text-decoration: underline;
-    }
-    .column p {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-    .whatif {
-      background: white;
-      padding: 20px;
-      font-size: 16px;
-      border-top: 2px solid #ccc;
-      border-bottom: 2px solid #ccc;
-    }
-    .impact {
-      background: #1d3557;
-      color: white;
-      padding: 20px;
-      font-size: 16px;
-      font-style: italic;
-    }
-    footer {
-      background: #006400;
-      color: white;
-      padding: 10px;
-      font-size: 14px;
-      font-weight: bold;
-    }
+  font-family: Arial, sans-serif;
+  margin: 0;       /* removes white gap */
+  padding: 0;
+  text-align: center;
+  background: #f9f9f9;
+  min-height: 100vh; /* ensures full screen height is covered */
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #fcd303;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  flex: 1; /* makes the middle section grow and push footer down */
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  color: white;
+}
+
+.left {
+  background: #0047ab;
+}
+
+.right {
+  background: #e63946;
+}
+
+.column h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.column p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.whatif {
+  background: white;
+  padding: 20px;
+  font-size: 16px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.impact {
+  background: #1d3557;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+footer {
+  background: #006400;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0; /* ✅ remove default margin */
+}
