@@ -1,10 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;       /* removes white gap */
+  margin: 0;
   padding: 0;
   text-align: center;
   background: #f9f9f9;
-  min-height: 100vh; /* ensures full screen height is covered */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -30,7 +30,7 @@ header p {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  flex: 1; /* makes the middle section grow and push footer down */
+  flex: 1;
 }
 
 .column {
@@ -81,5 +81,5 @@ footer {
   padding: 15px;
   font-size: 14px;
   font-weight: bold;
-  margin: 0; /* ✅ remove default margin */
+  margin: 0;
 }
